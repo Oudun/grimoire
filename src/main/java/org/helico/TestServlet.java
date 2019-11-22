@@ -15,4 +15,9 @@ public class TestServlet extends HttpServlet {
         System.out.println("HELLO!!!!!" + new File(".").getAbsolutePath());
     }
 
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doGet(req, resp);
+    }
+
 }
