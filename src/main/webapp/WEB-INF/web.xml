@@ -19,16 +19,16 @@
         <listener-class>org.helico.MyContextListener</listener-class>
     </listener>
 -->
-<!--    <context-param>-->
-<!--        <param-name>log4jConfigLocation</param-name>-->
-<!--        <param-value>/WEB-INF/classes/log4j.properties</param-value>-->
-<!--    </context-param>-->
+    <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>/WEB-INF/classes/log4j.properties</param-value>
+    </context-param>
 
-<!--    <servlet>-->
-<!--        <servlet-name>myServlet</servlet-name>-->
-<!--        <servlet-class>org.helico.MyServlet</servlet-class>-->
-<!--        <load-on-startup>1</load-on-startup>-->
-<!--    </servlet>-->
+    <servlet>
+        <servlet-name>myServlet</servlet-name>
+        <servlet-class>org.helico.MyServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
 
 <!--    <servlet-mapping>-->
 <!--        <servlet-name>myServlet</servlet-name>-->
