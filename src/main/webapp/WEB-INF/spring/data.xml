@@ -37,21 +37,34 @@
 		p:password="${jdbc.password}" />
 
 	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		  class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="configLocation">
-			<value>classpath:hibernate.cfg.xml</value>
-		</property>
-<!--		<property name="configurationClass">-->
-<!--			<value>org.hibernate.cfg.AnnotationConfiguration</value>-->
-<!--		</property>-->
+		<property name="packagesToScan" value="net.javaguides.springmvc.entity" />
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.show_sql">false</prop>
 				<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</prop>
-				<prop key="hibernate.connection.charSet">UTF-8</prop>
 			</props>
 		</property>
 	</bean>
+
+
+<!--	<bean id="sessionFactory"-->
+<!--		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">-->
+<!--		<property name="dataSource" ref="dataSource" />-->
+<!--		<property name="configLocation">-->
+<!--			<value>classpath:hibernate.cfg.xml</value>-->
+<!--		</property>-->
+<!--&lt;!&ndash;		<property name="configurationClass">&ndash;&gt;-->
+<!--&lt;!&ndash;			<value>org.hibernate.cfg.AnnotationConfiguration</value>&ndash;&gt;-->
+<!--&lt;!&ndash;		</property>&ndash;&gt;-->
+<!--		<property name="hibernateProperties">-->
+<!--			<props>-->
+<!--				<prop key="hibernate.show_sql">false</prop>-->
+<!--				<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</prop>-->
+<!--				<prop key="hibernate.connection.charSet">UTF-8</prop>-->
+<!--			</props>-->
+<!--		</property>-->
+<!--	</bean>-->
 
 </beans>
