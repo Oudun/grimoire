@@ -2,3 +2,7 @@
 *.iml
 target
 logs
+.classpath
+.project
+.settings/
+.vscode/
